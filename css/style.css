@@ -1,0 +1,51 @@
+/* MOBILE */
+body {
+  background-color: #FBFFFE;
+  color: black;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+  font-size: small;
+}
+
+a:active {
+  color: #FAA916;
+}
+
+a:visited {
+  color: #FDFFFC;
+}
+
+.top-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  height: 2vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+}
+
+.top-content #logo-photo {
+  width: 125px;
+}
+
+.top-content #nav-button {
+  background-color: #96031A;
+  -webkit-box-shadow: 2px 4px #FAA916;
+          box-shadow: 2px 4px #FAA916;
+  border-radius: 2px;
+  padding: 3px;
+  margin: 0.50vh;
+}
+
+/* TABLET */
+/* DESKTOP */
+/*# sourceMappingURL=style.css.map */
