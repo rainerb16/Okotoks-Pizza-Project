@@ -1,6 +1,11 @@
 @import 'variables';
 
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* MOBILE */
 
 body {
@@ -10,9 +15,10 @@ body {
 }
 
 a:link {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: small;
+  font-family: $secondaryFont;
 }
 
 a:active {
@@ -20,10 +26,15 @@ a:active {
 }
 
 a:visited {
-  color: #FDFFFC;
+  color: #1B1B1E;
 }
 
-.top-content {
+li {
+  list-style: none;
+  text-align: center;
+}
+
+.menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 100%;
@@ -33,22 +44,71 @@ a:visited {
   font-family: $secondaryFont;
   font-weight: 300;
 
-  #logo-photo {
-    width: 125px;
-  }
+    #nav-button {
+      background-color: $navButtonColor;
+      box-shadow: $navButtonCBoxShadow;
+      border-radius: 2px;
+      padding: 5px;
+      margin: 0.75vh;
+      width: 25%;
+      text-align: center;
+    }
 
-  #nav-button {
-    background-color: $navButtonColor;
-    box-shadow: $navButtonCBoxShadow;
-    border-radius: 2px;
-    padding: 3px;
-    margin: 0.50vh;
-  }
+    span {
+      height: 2vh;
+    }
 }
 
+.logo-photo {
+  margin: 1vh;
+  text-align: center;
+}
+#logo-photo {
+  width: 125px;
+}
 
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 90%;
+  margin-left: 5%;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  top: 25vh;
+  background-color: $containerColorDark;
+  box-shadow: $containerBoxShadow;
 
+    #main-best {
+      background-color: $containerColorOrange;
+      width: 75%;
+      box-shadow: $containerBoxShadow;
+      margin: 25px;
+    }
 
+    #main-best > h1 {
+      font-family: $primaryFont;
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #main-video > iframe {
+      width: 100%;
+      padding-top: 25px;
+    }
+
+    #main-menu-btn {
+      background-color: $containerColorOrange;
+      padding: 5px;
+      border-radius: 5%;
+      margin: 20px;
+      box-shadow: $containerBoxShadow;
+      color: black;
+    }
+    
+}
 
 /* TABLET */
 
