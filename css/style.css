@@ -100,6 +100,7 @@ li {
   font-size: xx-large;
   text-align: center;
   padding: 10px;
+  border-radius: 5%;
 }
 
 .main-container #main-video > iframe {
@@ -115,6 +116,39 @@ li {
   -webkit-box-shadow: 2px 0px 5px #1B1B1E;
           box-shadow: 2px 0px 5px #1B1B1E;
   color: black;
+}
+
+.specials-container {
+  position: relative;
+  margin-top: 30vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.specials-container #gourmet-pizza {
+  width: 90%;
+  margin-left: 5%;
+  opacity: 0.9;
+}
+
+.specials-container #specials-title {
+  background-color: #FAA916;
+  -webkit-box-shadow: 2px 0px 5px #1B1B1E;
+          box-shadow: 2px 0px 5px #1B1B1E;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.specials-container #specials-menu {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+  width: 100%;
 }
 
 /* TABLET */

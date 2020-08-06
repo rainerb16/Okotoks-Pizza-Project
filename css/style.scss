@@ -92,6 +92,7 @@ li {
       font-size: xx-large;
       text-align: center;
       padding: 10px;
+      border-radius: 5%;
     }
 
     #main-video > iframe {
@@ -108,6 +109,34 @@ li {
       color: black;
     }
     
+}
+
+.specials-container {
+  position: relative;;
+  margin-top: 30vh;
+  align-items: center;
+  justify-items: center;
+
+    #gourmet-pizza {
+      width: 90%;
+      margin-left: 5%;
+      opacity: 0.9;
+    }
+
+    #specials-title {
+      background-color: $containerColorOrange;
+      box-shadow: $containerBoxShadow;
+      margin: 30px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #specials-menu {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+      width: 100%;
+    }
 }
 
 /* TABLET */
