@@ -9,7 +9,7 @@
 /* MOBILE */
 
 body {
-  background-color: #F7F3E3;
+  background-color: white;
   font-family: $secondaryFont;
   color: black;
 }
@@ -23,12 +23,12 @@ a:link {
 }
 
 a:active {
-  color: #FAA916;
+  color: #273E47;
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 li {
@@ -39,7 +39,7 @@ li {
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -47,9 +47,9 @@ li {
   font-weight: 400;
 
     #nav-button {
-      background-color: $containerColorOrange;
-      box-shadow: 2px 3px #96031A;
-      border-radius: 2px;
+      background-color: $containerColorDark;
+      box-shadow: $containerBoxShadow;
+      border-radius: 10%;
       padding: 5px;
       margin: 0.75vh;
       width: 25%;
@@ -78,14 +78,18 @@ li {
   justify-items: center;
   position: relative;
   margin-top: 5vh;
-  background-color: $containerColorDark;
-  box-shadow: $containerBoxShadow;
 
     #main-best {
-      background-color: $containerColorOrange;
       width: 75%;
-      box-shadow: $containerBoxShadow;
       margin: 25px;
+      border-radius: 5%;
+
+      #best-pizza {
+        font-size: 34px;
+        color: #A41212;
+        position: relative;
+        font-family: $primaryFont;
+      }
     }
 
     #main-best > h1 {
@@ -93,8 +97,6 @@ li {
       color: black;
       font-size: xx-large;
       text-align: center;
-      padding: 10px;
-      border-radius: 5%;
     }
 
     #main-video > iframe {
@@ -105,7 +107,7 @@ li {
     #main-menu-btn {
       background-color: $containerColorOrange;
       padding: 5px;
-      border-radius: 5%;
+      border-radius: 10%;
       margin: 20px;
       box-shadow: $containerBoxShadow;
       color: black;
@@ -126,6 +128,7 @@ li {
       width: 90%;
       margin-left: 5%;
       opacity: 0.9;
+      border-radius: 5%;
     }
 
     #specials-title {
@@ -134,13 +137,14 @@ li {
       margin: 25px;
       text-align: center;
       line-height: 2rem;
+      border-radius: 5%;
+      color: black;
+      font-family: $secondaryFont;
     }
 
     #specials-menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-      background: $containerColorDark;
-      box-shadow: $containerBoxShadow;
       align-items: center;
       justify-items: center;
       text-align: center;
@@ -149,10 +153,7 @@ li {
       row-gap: 60px;
 
       h3 {
-        background-color: $containerColorOrange;
-        box-shadow: $containerBoxShadow;
         margin: 10px;
-        border-radius: 5%;
         padding: 5px;
       }
         
@@ -162,7 +163,7 @@ li {
         object-fit: cover;
         box-shadow: $containerBoxShadow;
         border: 5px solid #FBFFFE;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
 
       #call-btn {
@@ -171,13 +172,13 @@ li {
         padding: 5px;
         font-size: 14px;
         margin-bottom: 45px;
-        border-radius: 5%;
+        border-radius: 10%;
       }
 
       #specials-menu-btn {
         background-color: $containerColorOrange;
         padding: 5px;
-        border-radius: 5%;
+        border-radius: 10%;
         box-shadow: $containerBoxShadow;
         color: black;
         text-align: center;
@@ -193,6 +194,7 @@ li {
       opacity: 0.9;
       margin-left: 5%;
       margin-top: 25px;
+      border-radius: 5%;
     }
 }
 
@@ -210,10 +212,12 @@ li {
       justify-items: center;
       padding: 15px;
       row-gap: 5px;
+      border-radius: 10%;
     }
 
     #copyright {
       text-align: center;
+      padding: 10px;
     }
 }
 
@@ -252,6 +256,15 @@ li {
     margin-top: 5vh;
   }
 
+  #main-best > h1 {
+    font-family: $primaryFont;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
   .main-container #main-menu-btn {
     margin-top: 5vh;
     padding: 10px;
@@ -277,6 +290,6 @@ li {
 }
 
 
-/* DESKTOP 
+/* DESKTOP */
 
-@media only screen and (min-width: 900px) {} */
+@media only screen and (min-width: 900px) {} 
