@@ -208,9 +208,16 @@ li {
   width: 50%;
 }
 
+.specials-container #gourmet-pizza-two {
+  width: 90%;
+  opacity: 0.9;
+  margin-left: 5%;
+  padding-top: 20px;
+}
+
 .bottom-container {
   background-color: #96031A;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 90%;
   margin-left: 5%;
 }
