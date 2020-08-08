@@ -23,16 +23,40 @@
 <body>
 
     <!-- NAVIGATION -->
-
         <div class="top-content">
-            <nav class="menu">
-                <a id="logo-photo" href= "index.html"><img id="logo-photo" src="images/okotoks-pizza-logo.png" alt="Okotoks Pizza Logo"></a>   
+            <div id="menu-mobile"> 
+                <div id="mobile-logo">
+                    <a id="logo-photo" href= "index.html"><img id="logo-photo" src="images/okotoks-pizza-logo.png" alt="Okotoks Pizza Logo"></a>
+                </div>
+
+                <div id="mobile-spacer"></div>
+
+                <div id="mobile-hamburger-menu">
+                    <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+
+                    <div id="mobile-hamburger-container">
+                        <span id="mobile-line-one" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-two" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-three" class="mobile-hamburger-line"></span>
+                    </div>
+                    <div id="mobile-menu">
+                        <a href="/pages/menu.html">MENU</a>
+                        <a href="/pages/catering.html">CATERING</a>
+                        <a href="/pages/about.html">ABOUT</a>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu-desktop"> 
+                <div id="desktop-logo">
+                    <a id="logo-photo" href= "index.html"><img id="logo-photo" src="images/okotoks-pizza-logo.png" alt="Okotoks Pizza Logo"></a>
+                </div>
                 <span></span>
-                <a id="nav-button" href="index.html">HOME</a>
-                <a id="nav-button" href="pages/menu.html">MENU</a>
-                <a id="nav-button" href="pages/catering.html">CATERING</a>
-                <a id="nav-button" href="pages/about.html">ABOUT</a>
-            </nav>
+                <a id="menu-btn" href="/pages/menu.html">MENU</a>
+                <a id="menu-btn" href="/pages/catering.html">CATERING</a>
+                <a id="menu-btn" href="/pages/about.html">ABOUT</a>
+                </div>
+            </div>
         </div>
 
     <!-- MAIN CONTENT -->
