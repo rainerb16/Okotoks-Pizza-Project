@@ -57,7 +57,7 @@ a:visited {
 }
 
 a:hover {
-  font-size: 1.2em;
+  font-weight: bold;
 }
 
 li {
@@ -97,7 +97,7 @@ li {
 #logo-photo {
   text-align: center;
   margin-top: 0.25vh;
-  width: 125px;
+  width: 175px;
 }
 
 .main-container {
@@ -171,8 +171,8 @@ li {
 }
 
 .specials-container #gourmet-pizza {
-  width: 90%;
-  margin-left: 5%;
+  width: 75%;
+  margin-left: 12.5%;
   opacity: 0.9;
   border-radius: 5%;
 }
@@ -181,7 +181,7 @@ li {
   background-color: #CD0000;
   -webkit-box-shadow: 2px 0px 6px #1B1B1E;
           box-shadow: 2px 0px 6px #1B1B1E;
-  margin: 25px;
+  margin: 5vw;
   text-align: center;
   line-height: 2rem;
   border-radius: 5%;
@@ -326,7 +326,6 @@ li {
   padding: 10px;
 }
 
-/* MENU.HTML */
 /* TABLET */
 @media only screen and (min-width: 600px) {
   @-webkit-keyframes floatText {
@@ -356,10 +355,6 @@ li {
     75% {
       height: 45px;
     }
-  }
-  * {
-    margin: 0;
-    padding: 0;
   }
   .menu {
     display: -ms-grid;
@@ -395,6 +390,9 @@ li {
     position: relative;
     text-align: center;
     margin-top: 5vh;
+    background-image: url(/images/restaurant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .main-container .main-container #main-menu-btn {
     margin-top: 5vh;
@@ -428,8 +426,8 @@ li {
     width: 90%;
   }
   .specials-container #gourmet-pizza {
-    width: 90%;
-    margin-left: 5%;
+    width: 75%;
+    margin-left: 12.5%;
   }
   .specials-container #specials-menu {
     display: -ms-grid;
@@ -460,7 +458,7 @@ li {
   }
   .specials-container #gourmet-pizza-two {
     margin-top: 7vh;
-    width: 90%;
+    width: 75%;
     margin-right: 5%;
   }
   #phone-num {
@@ -469,4 +467,104 @@ li {
 }
 
 /* DESKTOP */
+@media only screen and (min-width: 900px) {
+  @-webkit-keyframes buttonAnimation {
+    0% {
+      width: 4vw;
+    }
+    50% {
+      width: 5vw;
+    }
+    100% {
+      width: 6vw;
+    }
+  }
+  @keyframes buttonAnimation {
+    0% {
+      width: 4vw;
+    }
+    50% {
+      width: 5vw;
+    }
+    100% {
+      width: 6vw;
+    }
+  }
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .top-content #nav-button {
+    background-color: #CD0000;
+    -webkit-box-shadow: 2px 3px #96031A;
+            box-shadow: 2px 3px #96031A;
+    border-radius: 10%;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  .menu > a:hover {
+    -webkit-animation-name: buttonAnimation;
+            animation-name: buttonAnimation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .main-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    background-image: url(/images/restaurant.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+  }
+  .main-container #main-best {
+    width: 100%;
+    margin-left: 5vw;
+    margin-bottom: 15vw;
+  }
+  .main-container #best-pizza {
+    margin-top: 5vw;
+  }
+  .main-container #video {
+    width: 100%;
+    position: relative;
+    margin-bottom: 5vw;
+    margin-right: 7vw;
+  }
+  .main-container #main-menu-btn {
+    position: absolute;
+    margin-right: 45vw;
+    margin-top: 10vw;
+    width: 10%;
+    padding: 10px;
+  }
+  #gourmet-pizza {
+    display: none;
+  }
+  #specials-title {
+    font-size: larger;
+    padding: 10px;
+  }
+  #specials-menu-btn #gourmet-pizza-two {
+    width: 70%;
+  }
+  #bottom-menu-btn {
+    font-size: large;
+  }
+  #copyright {
+    font-size: large;
+  }
+}
 /*# sourceMappingURL=style.css.map */
