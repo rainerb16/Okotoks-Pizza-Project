@@ -67,9 +67,9 @@
   padding: 5px;
   border-radius: 10%;
   margin: 20px;
-  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
-          box-shadow: 2px 0px 6px #1B1B1E;
-  color: black;
+  -webkit-box-shadow: 2px 4px #660000;
+          box-shadow: 2px 4px #660000;
+  color: white;
   width: 40%;
   margin-left: 2.5%;
   -webkit-box-align: center;
@@ -95,14 +95,13 @@
 }
 
 .specials-container #specials-title {
-  background-color: #CD0000;
-  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
-          box-shadow: 2px 0px 6px #1B1B1E;
+  text-decoration: underline;
+  color: black;
+  padding: 20px;
   margin: 5vw;
   text-align: center;
   line-height: 2rem;
   border-radius: 5%;
-  color: black;
   font-family: "Almarai", sans-serif;
 }
 
@@ -118,7 +117,7 @@
   text-align: center;
   width: 90%;
   margin-left: 5%;
-  row-gap: 40px;
+  grid-gap: 40px;
   position: relative;
 }
 
@@ -179,6 +178,7 @@
   font-size: 14px;
   margin-bottom: 50px;
   border-radius: 10%;
+  color: white;
 }
 
 .specials-container #gourmet-pizza-two {
@@ -195,7 +195,7 @@
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   border-radius: 5%;
-  color: black;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -210,11 +210,11 @@
   background-color: #CD0000;
   padding: 10px;
   border-radius: 10%;
-  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
-          box-shadow: 2px 0px 6px #1B1B1E;
-  color: black;
+  -webkit-box-shadow: 2px 4px #660000;
+          box-shadow: 2px 4px #660000;
   width: 50%;
   text-align: center;
+  color: white;
 }
 
 .bottom-container {
@@ -241,6 +241,7 @@
 .bottom-container #copyright {
   text-align: center;
   padding: 10px;
+  color: white;
 }
 
 /* TABLET */
@@ -314,6 +315,7 @@
   }
   .specials-container #specials-title {
     margin-left: 5%;
+    font-size: large;
     width: 90%;
   }
   .specials-container #gourmet-pizza {
@@ -346,6 +348,8 @@
     position: relative;
     width: 50%;
     text-align: center;
+    -webkit-box-shadow: 2px 4px #660000;
+            box-shadow: 2px 4px #660000;
   }
   .specials-container #gourmet-pizza-two {
     margin-top: 7vh;
@@ -357,6 +361,7 @@
   }
 }
 
+/* DESKTOP */
 @media only screen and (min-width: 900px) {
   @-webkit-keyframes floatText {
     0% {
@@ -376,28 +381,6 @@
     100% {
       -webkit-transform: translateX(0);
               transform: translateX(0);
-    }
-  }
-  @-webkit-keyframes buttonAnimation {
-    0% {
-      width: 4vw;
-    }
-    50% {
-      width: 5vw;
-    }
-    100% {
-      width: 6vw;
-    }
-  }
-  @keyframes buttonAnimation {
-    0% {
-      width: 4vw;
-    }
-    50% {
-      width: 5vw;
-    }
-    100% {
-      width: 6vw;
     }
   }
   .main-container {
@@ -432,6 +415,8 @@
     margin-top: 10vw;
     width: 10%;
     padding: 10px;
+    -webkit-box-shadow: 2px 4px #660000;
+            box-shadow: 2px 4px #660000;
   }
   #gourmet-pizza {
     display: none;
@@ -445,6 +430,8 @@
   }
   #bottom-menu-btn {
     font-size: large;
+    -webkit-box-shadow: 2px 4px #660000;
+            box-shadow: 2px 4px #660000;
   }
   #copyright {
     font-size: large;
@@ -452,7 +439,151 @@
 }
 
 /* MOBILE */
+.pizza-menu-title {
+  text-decoration: underline;
+  color: black;
+  padding: 20px;
+  margin: 5vw;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 5%;
+  font-family: "Almarai", sans-serif;
+}
+
+#pizza-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 100%;
+  row-gap: 30px;
+  margin-left: 0;
+}
+
+#pizza-menu .pizza {
+  position: relative;
+  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+          box-shadow: 2px 0px 6px #1B1B1E;
+  border: #47000c 1px solid;
+  padding: 1em;
+  text-align: center;
+  overflow-wrap: break-word;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pizza-menu .pizza #call-btn {
+  background-color: #CD0000;
+  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+          box-shadow: 2px 0px 6px #1B1B1E;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 50px;
+  border-radius: 10%;
+  color: white;
+}
+
+#pizza-menu #pizza-item {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  border: 5px solid #FBFFFE;
+}
+
+#pizza-menu .pizza:hover {
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.25s ease-in-out;
+  transition: -webkit-box-shadow 0.25s ease-in-out;
+  transition: box-shadow 0.25s ease-in-out;
+  transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+}
+
+#pizza-menu .pizza:hover > #pizza-description {
+  opacity: 1;
+  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+          box-shadow: 2px 0px 6px #1B1B1E;
+  top: 15vh;
+  text-align: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#pizza-menu #pizza-description {
+  opacity: 0;
+  padding: 15px;
+  z-index: 2;
+  background-color: #CD0000;
+  -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+          box-shadow: 2px 0px 6px #1B1B1E;
+  border-radius: 5%;
+  color: black;
+  position: absolute;
+}
+
 /* TABLET */
+@media only screen and (min-width: 600px) {
+  .pizza-menu-title {
+    text-decoration: underline;
+    color: black;
+    padding: 20px;
+    margin: 5vw;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 5%;
+    font-family: "Almarai", sans-serif;
+    font-size: large;
+  }
+  #pizza-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  #pizza-menu .pizza {
+    position: relative;
+    -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+            box-shadow: 2px 0px 6px #1B1B1E;
+    border: #47000c 1px solid;
+    padding: 1em;
+    text-align: center;
+    overflow-wrap: break-word;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pizza-menu .pizza #call-btn {
+    background-color: #CD0000;
+    -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+            box-shadow: 2px 0px 6px #1B1B1E;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    border-radius: 10%;
+    color: white;
+  }
+  #pizza-menu #pizza-item {
+    width: 15rem;
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 10px;
+    border: 5px solid #FBFFFE;
+  }
+}
+
 /* DESKTOP */
 * {
   margin: 0;
@@ -467,19 +598,19 @@ body {
 }
 
 a:link {
-  color: black;
+  color: white;
   font-size: small;
   font-family: "Almarai", sans-serif;
   text-decoration: none;
 }
 
 a:active {
-  color: #273E47;
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
-  color: #273E47;
+  color: white;
 }
 
 a:hover {
@@ -489,6 +620,10 @@ a:hover {
 li {
   list-style: none;
   text-align: center;
+}
+
+#menu-desktop {
+  display: none;
 }
 
 #menu-mobile {
@@ -543,6 +678,7 @@ li {
   width: 100%;
   background-color: #CD0000;
   font-family: "Almarai", sans-serif;
+  color: white;
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
@@ -560,7 +696,7 @@ li {
 }
 
 #menu-mobile #mobile-hamburger-menu #mobile-menu a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
@@ -576,9 +712,6 @@ li {
 
 /* TABLET */
 @media only screen and (min-width: 600px) {
-  #menu-desktop {
-    display: none;
-  }
   #logo-photo {
     text-align: center;
     margin-top: 0.25vh;
@@ -631,6 +764,7 @@ li {
     width: 100%;
     background-color: #CD0000;
     font-family: "Almarai", sans-serif;
+    color: white;
     font-size: large;
     display: -ms-grid;
     display: grid;
@@ -648,7 +782,7 @@ li {
     transition: all 0.5s ease-in-out;
   }
   #menu-mobile #mobile-hamburger-menu #mobile-menu a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 500;
   }
@@ -656,14 +790,36 @@ li {
 
 /* DESKTOP */
 @media only screen and (min-width: 900px) {
+  @-webkit-keyframes buttonAnimation {
+    0% {
+      width: 5vw;
+    }
+    50% {
+      width: 8vw;
+    }
+    100% {
+      width: 9vw;
+    }
+  }
+  @keyframes buttonAnimation {
+    0% {
+      width: 5vw;
+    }
+    50% {
+      width: 8vw;
+    }
+    100% {
+      width: 9vw;
+    }
+  }
   #menu-mobile {
     display: none;
   }
   #menu-desktop {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 2fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -674,20 +830,27 @@ li {
   #menu-desktop #menu-btn {
     background-color: #CD0000;
     font-family: "Almarai", sans-serif;
-    -webkit-box-shadow: 2px 0px 6px #1B1B1E;
-            box-shadow: 2px 0px 6px #1B1B1E;
+    -webkit-box-shadow: 2px 4px #660000;
+            box-shadow: 2px 4px #660000;
+    color: white;
     padding: 10px;
     border-radius: 10%;
-    width: 40%;
+    width: 50%;
     text-align: center;
+  }
+  #menu-desktop span {
+    color: #A41212;
+    position: relative;
+    font-family: "Prata", serif;
+    font-size: 14px;
   }
   #menu-desktop > a:hover {
     -webkit-animation-name: buttonAnimation;
             animation-name: buttonAnimation;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-animation-timing-function: cubic-bezier(0.8, -0.55, 0.265, 1.25);
+            animation-timing-function: cubic-bezier(0.8, -0.55, 0.265, 1.25);
     font-weight: bold;
   }
 }
