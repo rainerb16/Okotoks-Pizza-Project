@@ -1,0 +1,46 @@
+/* MOBILE */
+
+.catering-container {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  column-gap: 20px;
+  margin-bottom: 10vh;
+
+    #catering-photo {
+      text-align: center;
+      width: 90%;
+      margin-left: 5%;
+      border: 1px solid black;
+      box-shadow: 5px 0px 7px 0px #866c70;
+      margin: 1vh;
+    }
+
+    #catering-content {
+      text-align: center;
+      width: 100%;
+      padding-top: 40px;
+    }
+
+    #email-link {
+      color: black;
+      font-size: large;
+      text-decoration: underline;
+    }
+}
+
+
+/* TABLET */
+
+@media only screen and (min-width: 600px) {}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 900px) {
+
+  #catering-content {
+    font-size: larger;
+  }
+}

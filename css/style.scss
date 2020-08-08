@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'home-content';
 @import 'menu-content';
+@import 'catering-content';
 
 
 
@@ -32,7 +33,7 @@ a:active {
 }
 
 a:visited {
-  color: white;
+  color: lightgray;
 }
 
 a:hover {
