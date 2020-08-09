@@ -29,18 +29,18 @@
       font-size: large;
       text-decoration: underline;
     }
-}
+} 
 
 
 /* TABLET */
-
 @media only screen and (min-width: 600px) {}
 
-/* DESKTOP */
 
+
+/* DESKTOP */
 @media only screen and (min-width: 900px) {
 
   #catering-content {
-    font-size: larger;
+    font-size: medium;
   }
 }

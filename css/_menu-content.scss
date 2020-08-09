@@ -69,14 +69,13 @@
     background-color: $containerColorDark;
     box-shadow: $containerBoxShadow;
     border-radius: 5%;
-    color: black;
+    color: white;
     position: absolute;
   }
 }
 
 
 /* TABLET */
-
 @media only screen and (min-width: 600px) {
   
   .pizza-menu-title {
