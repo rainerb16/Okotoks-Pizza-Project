@@ -11,8 +11,7 @@
 
     #catering-photo {
       text-align: center;
-      width: 90%;
-      margin-left: 5%;
+      width: 70%;
       border: 1px solid black;
       box-shadow: 5px 0px 7px 0px #866c70;
       margin: 1vh;
@@ -22,7 +21,42 @@
       text-align: center;
       width: 100%;
       padding-top: 40px;
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 5vh;
+        cursor: pointer;
+        width: 50%;
+        margin-left: 25%;
+
+        textarea {
+          height: 100px;
+        }
+
+        .contact-input {
+          color: black;
+          font-family: $secondaryFont;
+          font-size: 20px;
+          border-radius: 5%;
+          line-height: 15px;
+          border: 2px solid black;
+          padding: 10px;
+          margin: 1vh;
+          width: 100%;
+        }
+
+        [type="submit"] {
+          background: $navButtonColor;
+          color: white;
+          padding: 5px;
+          border-radius: 10%;
+        }
+      }
     }
+
 
     #email-link {
       color: black;
