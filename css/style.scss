@@ -5,14 +5,12 @@
 @import 'about-content';
 
 
-/* BASE STYLES */
+/* MOBILE */
 
 * {
   margin: 0;
   padding: 0;
 }
-
-/* MOBILE */
 
 body {
   background-color: white;
@@ -111,6 +109,7 @@ li {
           color: white;
           text-decoration: none;
           font-weight: 500;
+          padding: 5px;
         }
       }
     }
@@ -150,6 +149,11 @@ li {
 
 /* TABLET */
 @media only screen and (min-width: 600px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
   #logo-photo {
     text-align: center;
@@ -257,6 +261,11 @@ li {
 /* DESKTOP */
 @media only screen and (min-width: 900px) {
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   @keyframes buttonAnimation {
     0% {
       width: 5vw;
@@ -288,7 +297,7 @@ li {
     color: white;
     padding: 10px;
     border-radius: 10%;
-    width: 50%;
+    width: 60%;
     text-align: center;
     }
 
