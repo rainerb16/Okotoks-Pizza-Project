@@ -1,6 +1,8 @@
 
 /* MOBILE */
-
+h3 {
+  margin: 3vh;
+}
 .pizza-menu-title {
   text-decoration: underline;
   color: black;
@@ -81,8 +83,6 @@
   .pizza-menu-title {
   text-decoration: underline;
   color: black;
-  padding: 20px;
-  margin: 5vw;
   text-align: center;
   line-height: 2rem;
   border-radius: 5%;
@@ -97,6 +97,7 @@
     justify-items: center;
     width: 100%;
     margin-left: 0;
+    row-gap: 5vh;
   
     .pizza {
       position: relative;
@@ -109,7 +110,6 @@
   
       #call-btn {
         background-color: $containerColorDark;
-        box-shadow: $containerBoxShadow;
         padding: 10px;
         font-size: 14px;
         margin-bottom: 50px;
@@ -133,4 +133,8 @@
 
 
 /* DESKTOP */
-@media only screen and (min-width: 900px) {}
+@media only screen and (min-width: 900px) {
+  h3 {
+    margin: 3vh;
+  }
+}

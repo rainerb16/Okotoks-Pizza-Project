@@ -49,7 +49,8 @@
       padding: 5px;
       border-radius: 10%;
       margin: 20px;
-      box-shadow: $navButtonCBoxShadow;
+      box-shadow: none;
+      transition: box-shadow 0.3s;
       color: white;
       width: 40%;
       margin-left: 2.5%;
@@ -57,7 +58,10 @@
       justify-items: center;
       text-align: center;
     }
-    
+
+    #main-menu-btn:hover  {
+      box-shadow: 2px 4px 4px #660000;
+    }
 }
 
 
@@ -147,36 +151,29 @@
       }
     }
 
-    #gourmet-pizza-two {
-      width: 90%;
-      opacity: 0.9;
-      margin-left: 5%;
-      margin-top: 25px;
-      border-radius: 5%;
-    }
+      #specials-menu-btn {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        border-radius: 5%;
+        color: white;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10vh;
+        margin-top: 20vh;
+    
+        #bottom-menu-btn {
+          background-color: $navButtonColor;
+          padding: 10px;
+          border-radius: 10%;
+          box-shadow: $navButtonCBoxShadow;
+          width: 50%;
+          text-align: center;
+          color: white;
+        }
+      } 
 }
-
-#specials-menu-btn {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  border-radius: 5%;
-  color: white;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  object-fit: cover;
-  margin-top: 20vh;
-
-  #bottom-menu-btn {
-    background-color: $navButtonColor;
-    padding: 10px;
-    border-radius: 10%;
-    box-shadow: $navButtonCBoxShadow;
-    width: 50%;
-    text-align: center;
-    color: white;
-  }
-} 
 
 
 /* TABLET */
@@ -269,20 +266,20 @@
       grid-template-columns: 1fr;
       align-items: center;
       justify-items: center;
-
+      transition: box-shadow 0.3s;
+      box-shadow: none;
+    }
 
       #bottom-menu-btn {
         position: relative;
         width: 50%;
         text-align: center;
-        box-shadow: $navButtonCBoxShadow;
+        transition: box-shadow 0.3s;
+        box-shadow: none;
       }
-    }
 
-    #gourmet-pizza-two {
-      margin-top: 7vh;
-      width: 75%;
-      margin-right: 5%;
+      #bottom-menu-btn:hover  {
+        box-shadow: 2px 4px 4px #660000;
     }
   }
 }
@@ -331,7 +328,12 @@
       margin-top: 10vw;
       width: 10%;
       padding: 10px;
-      box-shadow: $navButtonCBoxShadow;
+      box-shadow: none;
+      transition: box-shadow 0.3s;
+    }
+
+    #main-menu-btn:hover  {
+      box-shadow: 2px 4px 4px #660000;
     }
   }
 
@@ -339,17 +341,29 @@
     display: none;
   }
 
-  #specials-title {
-    font-size: larger;
-    padding: 10px;
-  }
+  .specials-container {
+    #specials-title {
+      font-size: larger;
+      padding: 10px;
+    }
 
-  #specials-menu-btn #gourmet-pizza-two {
-    width: 70%;
-  }
+    #call-btn {
+      background-color: $containerColorDark;
+      box-shadow: $containerBoxShadow;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 50px;
+      border-radius: 10%;
+      color: white;
+    }
 
-  #bottom-menu-btn {
-    font-size: large;
-    box-shadow: $navButtonCBoxShadow;
+    #specials-menu-btn #bottom-menu-btn {
+      box-shadow: none;
+      transition: box-shadow 0.3s;
+    }
+
+    #specials-menu-btn #bottom-menu-btn:hover  {
+      box-shadow: 2px 4px 4px #660000;
+    }
   }
 }

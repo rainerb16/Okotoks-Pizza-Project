@@ -53,11 +53,16 @@
           color: white;
           padding: 5px;
           border-radius: 10%;
+          box-shadow: none;
+          transition: box-shadow 0.3s;
+        }
+        
+        [type="submit"]:hover {
+          box-shadow: 2px 4px 4px #660000;
         }
       }
-    }
-} 
-
+    } 
+}
 
 /* TABLET */
 @media only screen and (min-width: 600px) {}
