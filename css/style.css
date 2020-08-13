@@ -188,6 +188,17 @@
   margin-bottom: 50px;
   border-radius: 10%;
   color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.specials-container #specials-menu #call-btn:hover {
+  -webkit-box-shadow: 2px 4px 4px #660000;
+          box-shadow: 2px 4px 4px #660000;
 }
 
 .specials-container #specials-menu-btn {
@@ -423,6 +434,16 @@
     margin-bottom: 50px;
     border-radius: 10%;
     color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  }
+  .specials-container #call-btn:hover {
+    -webkit-box-shadow: 2px 4px 4px #660000;
+            box-shadow: 2px 4px 4px #660000;
   }
   .specials-container #specials-menu-btn #bottom-menu-btn {
     -webkit-box-shadow: none;
@@ -490,6 +511,17 @@ h3 {
   margin-bottom: 50px;
   border-radius: 10%;
   color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+#pizza-menu .pizza #call-btn:hover {
+  -webkit-box-shadow: 2px 4px 4px #660000;
+          box-shadow: 2px 4px 4px #660000;
 }
 
 #pizza-menu #pizza-item {
@@ -562,18 +594,29 @@ h3 {
     border: #47000c 1px solid;
     padding: 1em;
     text-align: center;
-    overflow-wrap: break-word;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   #pizza-menu .pizza #call-btn {
     background-color: #CD0000;
+    -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+            box-shadow: 2px 0px 6px #1B1B1E;
     padding: 10px;
     font-size: 14px;
     margin-bottom: 50px;
     border-radius: 10%;
     color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  }
+  #pizza-menu .pizza #call-btn:hover {
+    -webkit-box-shadow: 2px 4px 4px #660000;
+            box-shadow: 2px 4px 4px #660000;
   }
   #pizza-menu #pizza-item {
     width: 15rem;
@@ -589,6 +632,26 @@ h3 {
 @media only screen and (min-width: 900px) {
   h3 {
     margin: 3vh;
+  }
+  #call-btn {
+    background-color: #CD0000;
+    -webkit-box-shadow: 2px 0px 6px #1B1B1E;
+            box-shadow: 2px 0px 6px #1B1B1E;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    border-radius: 10%;
+    color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  }
+  #call-btn:hover {
+    -webkit-box-shadow: 2px 4px 4px #660000;
+            box-shadow: 2px 4px 4px #660000;
   }
 }
 
@@ -608,7 +671,7 @@ h3 {
 
 .catering-container #catering-photo {
   text-align: center;
-  width: 70%;
+  width: 50%;
   border: 1px solid black;
   -webkit-box-shadow: 5px 0px 7px 0px #866c70;
           box-shadow: 5px 0px 7px 0px #866c70;
@@ -617,7 +680,8 @@ h3 {
 
 .catering-container #catering-content {
   text-align: center;
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
   padding-top: 40px;
 }
 
@@ -668,6 +732,7 @@ h3 {
 .catering-container #catering-content form [type="submit"]:hover {
   -webkit-box-shadow: 2px 4px 4px #660000;
           box-shadow: 2px 4px 4px #660000;
+  cursor: pointer;
 }
 
 /* TABLET */
@@ -679,49 +744,6 @@ h3 {
 }
 
 /* MOBILE */
-@-webkit-keyframes floatDough {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@keyframes floatDough {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes floatEat {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes floatEat {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 article {
   display: -ms-grid;
   display: grid;
@@ -732,8 +754,8 @@ article {
           align-items: center;
   justify-items: center;
   text-align: justify;
-  width: 90%;
-  margin-left: 5%;
+  width: 75%;
+  margin-left: 12.5%;
 }
 
 h3 {
@@ -763,14 +785,15 @@ h3 {
 }
 
 #google iframe {
-  width: 90%;
-  margin-left: 5%;
+  width: 75%;
+  margin-left: 12.5%;
   margin-top: 4vh;
 }
 
 #hours {
   width: 90%;
   margin-left: 5%;
+  margin-top: 5vh;
 }
 
 #hours h2, #hours h3 {
@@ -797,6 +820,8 @@ h3 {
     justify-items: center;
     -webkit-column-gap: 10px;
             column-gap: 10px;
+    width: 75%;
+    margin-left: 12.5%;
   }
   article #about-content {
     margin-bottom: 2vh;
@@ -834,6 +859,9 @@ h3 {
   h3 {
     margin: 0;
   }
+  #about-container {
+    margin-bottom: 5vh;
+  }
   article {
     display: -ms-grid;
     display: grid;
@@ -843,18 +871,11 @@ h3 {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
-    width: 90%;
-    margin-left: 5%;
+    width: 75%;
+    margin-left: 12.5%;
   }
   article #about-content {
-    margin-top: 3vh;
-  }
-  article #eat {
-    width: 50%;
-    margin-bottom: 2vh;
-    -webkit-animation: 2s ease-out 0s 1 floatEat;
-            animation: 2s ease-out 0s 1 floatEat;
-    border-radius: 5%;
+    margin-top: 1vh;
   }
   #photo-grid {
     display: -ms-grid;
@@ -867,6 +888,7 @@ h3 {
     justify-items: center;
     width: 75%;
     margin-left: 12.5%;
+    margin-top: 2vh;
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }

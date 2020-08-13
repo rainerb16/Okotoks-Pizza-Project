@@ -1,21 +1,4 @@
 /* MOBILE */
-@keyframes floatDough {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes floatEat {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 article {
   display: grid;
@@ -23,8 +6,8 @@ article {
   align-items: center;
   justify-items: center;
   text-align: justify;
-  width: 90%;
-  margin-left: 5%;
+  width: 75%;
+  margin-left: 12.5%;
 }
 
 h3 {
@@ -51,8 +34,8 @@ h3 {
 
 #google {
   iframe {
-    width: 90%;
-    margin-left: 5%;
+    width: 75%;
+    margin-left: 12.5%;
     margin-top: 4vh;
   }
 }
@@ -60,6 +43,7 @@ h3 {
 #hours {
   width: 90%;
   margin-left: 5%;
+  margin-top: 5vh;
 
 
     h2, h3 {
@@ -85,6 +69,8 @@ h3 {
     align-items: center;
     justify-items: center;
     column-gap: 10px;
+    width: 75%;
+    margin-left: 12.5%;
 
     #about-content {
     margin-bottom: 2vh;
@@ -123,24 +109,20 @@ h3 {
     margin: 0;
   }
 
+  #about-container {
+    margin-bottom: 5vh;
+  }
 
   article {
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;
     justify-items: center;
-    width: 90%;
-    margin-left: 5%;
+    width: 75%;
+    margin-left: 12.5%;
 
     #about-content {
-    margin-top: 3vh;
-    }
-  
-    #eat {
-      width: 50%;
-      margin-bottom: 2vh;
-      animation: 2s ease-out 0s 1 floatEat;
-      border-radius: 5%;
+    margin-top: 1vh;
     }
   }
 
@@ -151,6 +133,7 @@ h3 {
     justify-items: center;
     width: 75%;
     margin-left: 12.5%;
+    margin-top: 2vh;
     column-gap: 10px;
     
   

@@ -148,6 +148,12 @@
         margin-bottom: 50px;
         border-radius: 10%;
         color: white;
+        box-shadow: none;
+        transition: box-shadow 0.3s;
+      }
+
+      #call-btn:hover  {
+        box-shadow: 2px 4px 4px #660000;
       }
     }
 
@@ -355,6 +361,12 @@
       margin-bottom: 50px;
       border-radius: 10%;
       color: white;
+      box-shadow: none;
+      transition: box-shadow 0.3s;
+    }
+
+    #call-btn:hover  {
+      box-shadow: 2px 4px 4px #660000;
     }
 
     #specials-menu-btn #bottom-menu-btn {
