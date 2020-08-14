@@ -11,7 +11,7 @@
 
     #catering-photo {
       text-align: center;
-      width: 50%;
+      width: 75%;
       border: 1px solid black;
       box-shadow: 5px 0px 7px 0px #866c70;
       margin: 1vh;
@@ -19,8 +19,8 @@
 
     #catering-content {
       text-align: center;
-      width: 50%;
-      margin-left: 25%;
+      width: 75%;
+      margin-left: 12.5%;
       padding-top: 40px;
 
       form {
@@ -68,12 +68,29 @@
 
 
 /* TABLET */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  #catering-photo {
+    text-align: center;
+    width: 75%;
+    border: 1px solid black;
+    box-shadow: 5px 0px 7px 0px #866c70;
+    margin: 1vh;
+  }
+
+}
 
 
 
 /* DESKTOP */
 @media only screen and (min-width: 900px) {
+
+  #catering-photo {
+    text-align: center;
+    width: 75%;
+    border: 1px solid black;
+    box-shadow: 5px 0px 7px 0px #866c70;
+    margin: 1vh;
+  }
 
   #catering-content {
     font-size: medium;
