@@ -1066,6 +1066,10 @@ li {
   line-height: 40px;
 }
 
+.bottom-container #copyright #number-displayed {
+  display: none;
+}
+
 /* TABLET */
 @media only screen and (min-width: 670px) {
   * {
@@ -1172,6 +1176,9 @@ li {
     color: white;
     line-height: 40px;
   }
+  .bottom-container #copyright #number-displayed {
+    display: block;
+  }
 }
 
 /* DESKTOP */
@@ -1245,6 +1252,9 @@ li {
     padding: 5px;
     color: white;
     line-height: 40px;
+  }
+  .bottom-container #copyright #number-displayed {
+    display: contents;
   }
 }
 /*# sourceMappingURL=style.css.map */

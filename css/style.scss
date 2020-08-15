@@ -146,6 +146,10 @@ li {
       padding: 5px;
       color: white;
       line-height: 40px;
+
+      #number-displayed {
+        display: none;
+      }
     }
 }
 
@@ -256,6 +260,10 @@ li {
         padding: 5px;
         color: white;
         line-height: 40px;
+
+        #number-displayed {
+          display: block;
+        }
       }
   }
 }
@@ -328,6 +336,10 @@ li {
         padding: 5px;
         color: white;
         line-height: 40px;
+
+        #number-displayed {
+          display: contents;
+        }
       }
   }
 } 
