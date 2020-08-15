@@ -1201,28 +1201,45 @@ li {
     justify-items: center;
     width: 90%;
     margin-left: 5%;
+    /*#menu-btn:hover  {
+      box-shadow: 2px 4px 4px #660000;
+    }*/
   }
   #menu-desktop #menu-btn {
-    background-color: #CD0000;
-    font-family: "Almarai", sans-serif;
-    color: white;
-    padding: 10px;
-    border-radius: 10%;
-    width: 60%;
-    text-align: center;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transition: -webkit-box-shadow 0.3s;
-    transition: -webkit-box-shadow 0.3s;
-    transition: box-shadow 0.3s;
-    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    color: #660000;
+    padding: 7px;
   }
-  #menu-desktop #menu-btn:hover {
-    -webkit-box-shadow: 2px 4px 4px #660000;
-            box-shadow: 2px 4px 4px #660000;
+  #menu-desktop #menu-btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #660000;
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+  }
+  #menu-desktop #menu-btn:hover:before, #menu-desktop #menu-btn:focus:before, #menu-desktop #menu-btn:active:before {
+    left: 0;
+    right: 0;
   }
   #menu-desktop span {
-    color: #A41212;
+    color: #660000;
     position: relative;
     font-family: "Prata", serif;
     font-size: 14px;
