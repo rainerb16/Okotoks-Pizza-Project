@@ -242,7 +242,7 @@
 }
 
 /* TABLET */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
   @-webkit-keyframes floatText {
     0% {
       -webkit-transform: translateX(-100%);
@@ -365,7 +365,7 @@
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1020px) {
   @-webkit-keyframes floatText {
     0% {
       -webkit-transform: translateX(-100%);
@@ -571,7 +571,7 @@
 }
 
 /* TABLET */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
   .pizza-menu-title {
     text-decoration: underline;
     color: black;
@@ -636,7 +636,7 @@
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1020px) {
   .pizza-menu-title > h3 {
     margin: 3vh;
   }
@@ -741,7 +741,7 @@
 }
 
 /* TABLET */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
   #catering-photo {
     text-align: center;
     width: 75%;
@@ -753,7 +753,7 @@
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1020px) {
   #catering-photo {
     text-align: center;
     width: 75%;
@@ -840,7 +840,7 @@ h3 {
 }
 
 /* TABLET */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
   .pizza-menu-title {
     margin: 0;
   }
@@ -879,7 +879,7 @@ h3 {
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1020px) {
   h3 {
     margin: 0;
   }
@@ -1041,7 +1041,7 @@ li {
 }
 
 .bottom-container {
-  background-color: #570707;
+  background-color: #660000;
   margin-top: 25px;
 }
 
@@ -1067,7 +1067,7 @@ li {
 }
 
 /* TABLET */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
   * {
     margin: 0;
     padding: 0;
@@ -1147,7 +1147,7 @@ li {
     font-weight: 500;
   }
   .bottom-container {
-    background-color: #570707;
+    background-color: #660000;
     margin-top: 25px;
   }
   .bottom-container #footer {
@@ -1175,7 +1175,7 @@ li {
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1020px) {
   * {
     margin: 0;
     padding: 0;
@@ -1221,7 +1221,7 @@ li {
     font-size: 14px;
   }
   .bottom-container {
-    background-color: #570707;
+    background-color: #660000;
     margin-top: 25px;
   }
   .bottom-container #footer {
