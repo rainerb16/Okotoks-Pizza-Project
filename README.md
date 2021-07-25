@@ -3,7 +3,7 @@ Okotoks Pizza is the final project of InnoTech College's HTML and CSS/Sass units
 
 Used: HTML, SCSS
 
-Live site: https://straightouttaokotoks.ml<br/><br/>
+Live site: https://straightouttaokotoks.netlify.app/<br/><br/>
 
 ![OOP on Desktop](https://i.imgur.com/czjssb8.png)<br/><br/>
 ![OOP on Desktop](https://i.imgur.com/KKKfEpI.png)<br/><br/>
